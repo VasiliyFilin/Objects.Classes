@@ -2,19 +2,13 @@ package pro.sky.java.course1.HW12;
 
 public class Book {
     private String name;
-    private String author;
+    private Author author;
     private int year;
 
-    public Book(String name, String author, int year) {
-        if (author.isEmpty()) {
-            this.name = name;
-            this.author = "Автор не указан";
-            this.year = year;
-        } else {
-            this.name = name;
-            this.author = author;
-            this.year = year;
-        }
+    public Book(String name, Author author, int year) {
+        this.author = author;
+        this.name = name;
+        this.year = year;
     }
 
     public String getName() {
@@ -22,7 +16,7 @@ public class Book {
     }
 
     public String getAuthor() {
-        return this.author;
+        return this.author.getFullName();
     }
 
     public int getYear() {

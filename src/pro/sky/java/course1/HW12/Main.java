@@ -5,11 +5,10 @@ public class Main {
 
         Author lindsayJ = new Author("Джеффри", "Линдсей");
 
-        Book metro2033 = new Book("Метро 2033", glukhovskyD.getFullName(), 2005);
+        Book metro2033 = new Book("Метро 2033", glukhovskyD, 2005);
 
         Book darklyDreamingDexter = new Book("Дремлющий демон Декстера / Darkly Dreaming Dexter",
-                lindsayJ.getFullName(), 2003);
-        Book daysGone = new Book("Days Gone", "", 2019);
+                lindsayJ, 2003);
 
 //        Вывод в консоль, для проверки:
 
@@ -26,9 +25,5 @@ public class Main {
         System.out.println("Название книги: " + darklyDreamingDexter.getName() + "\n"
                 + "Автор: " + darklyDreamingDexter.getAuthor() + "\n"
                 + "Год издания: " + darklyDreamingDexter.getYear() + "\n");
-
-        System.out.println("Название книги: " + daysGone.getName() + "\n"
-                + "Автор: " + daysGone.getAuthor() + "\n"
-                + "Год издания: " + daysGone.getYear() + "\n");
     }
 }
